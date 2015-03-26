@@ -8,9 +8,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.manijshrestha.buildvariantdemo.model.WeatherData;
+import com.manijshrestha.buildvariantdemo.service.WeatherListener;
 import com.manijshrestha.buildvariantdemo.service.WeatherService;
 
-public class MainActivity extends ActionBarActivity implements WeatherService.WeatherListener {
+public class MainActivity extends ActionBarActivity implements WeatherListener {
 
     private EditText mCityName;
     private TextView mTemperature;

@@ -35,10 +35,4 @@ public class WeatherService {
             }
         });
     }
-
-    public interface WeatherListener {
-        public void onWeatherData(WeatherData data);
-
-        public void onNoWeatherData();
-    }
 }

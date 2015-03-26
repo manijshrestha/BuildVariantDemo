@@ -18,6 +18,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors {
+        demo {
+            applicationId = "com.manijshrestha.weatherdemo.demo"
+            resValue "string", "app_name", "Demo App"
+        }
+        full {
+            applicationId = "com.manijshrestha.weatherdemo.full"
+            resValue "string", "app_name", "Full App"
+        }
+    }
 }
 
 dependencies {
